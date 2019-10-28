@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
     while (1) {
         n = read(fd, &ev, sizeof ev);
 	if (ev.type == EV_KEY && ev.value == 1) {
-            cout << "Key " << ev,code << " pressed" << endl;
+            cout << "Key " << ev.code << " pressed" << endl;
 	}
 	if (ev.value == KEY_ESC) break;
 
